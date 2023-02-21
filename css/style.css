@@ -8,9 +8,11 @@
 
 :root {
   --color-white: #fff;
-  --color-lightGrey: lightgrey;
+  --color-lightGrey: rgb(243, 243, 243);
   --color-lightBlue: lightblue;
   --color-blue: rgb(69, 69, 241);
+  --blue-1: #62b8f5;
+  --blue-2: #4475ef;
 }
 
 html {
@@ -22,6 +24,15 @@ body {
   line-height: 1.5;
   font-weight: 400;
   font-size: 1.6rem;
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    90deg,
+    rgb(176, 221, 241) 35%,
+    rgba(99, 197, 227, 0.76) 100%
+  );
 }
 
 h1 {
@@ -31,14 +42,21 @@ h1 {
 }
 
 /* form */
+.form__container {
+  text-align: center;
+  width: fit-content;
+  margin: auto;
+}
 .search__container {
-  border-bottom: 1px solid green;
+  border-bottom: 1px solid var(--color-white);
   width: fit-content;
 }
 
 .search__location {
   border: none;
   padding: 1rem;
+  background: inherit;
+  color: var(--color-white);
 }
 
 .search__location:focus {
@@ -55,11 +73,11 @@ h1 {
   background: none;
   padding: 1rem;
   cursor: pointer;
+  color: var(--color-white);
 }
 
 /* main container */
 .main__container {
-  border: 1px solid green;
   text-align: center;
 }
 
@@ -68,13 +86,16 @@ h1 {
   font-weight: 500;
   font-size: 1.8rem;
   text-transform: uppercase;
+  color: var(--color-white);
 }
 .cloud {
   margin-top: 0.9rem;
+  color: var(--color-lightGrey);
 }
 
 .cloud__info {
   margin-top: 0.5rem;
+  color: var(--color-lightGrey);
 }
 
 .cloud__img {
@@ -84,4 +105,31 @@ h1 {
 
 .temperature {
   font-weight: 500;
+  color: var(--color-white);
 }
+
+/* container */
+.container {
+  text-align: center;
+  padding: 2rem;
+  max-width: 800px;
+  margin: auto;
+  border-radius: 15px;
+  background: linear-gradient(
+    90deg,
+    rgba(123, 184, 232, 1) 35%,
+    rgba(99, 188, 227, 0.7595413165266106) 100%
+  );
+
+  box-shadow: 0 0 20px rgb(119, 209, 245);
+}
+
+.container .main__container {
+  margin-top: 3rem;
+}
+
+/* background: linear-gradient(
+    90deg,
+    rgba(154, 222, 238, 1) 35%,
+    rgba(99, 224, 227, 0.7595413165266106) 100%
+  ); */
