@@ -1,0 +1,56 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --color-white: #fff;
+  --color-lightGrey: lightgrey;
+  --color-lightBlue: lightblue;
+  --color-blue: rgb(69, 69, 241);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  line-height: 1.5;
+  font-weight: 500;
+  font-size: 1.6rem;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+/* form */
+.search__container {
+  border-bottom: 1px solid green;
+  width: fit-content;
+}
+
+.search__location {
+  border: none;
+  padding: 1rem;
+}
+
+.search__location:focus {
+  outline: 0;
+}
+
+.search__location::placeholder {
+  color: var(--color-lightGrey);
+  font-weight: 400;
+}
+
+.submit__btn {
+  border: none;
+  background: none;
+  padding: 1rem;
+  cursor: pointer;
+}
