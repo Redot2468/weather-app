@@ -37,7 +37,7 @@ body {
 
 h1 {
   font-size: 5rem;
-  margin: 1.3rem;
+  margin: 1.1rem;
   font-weight: 400;
 }
 
@@ -145,4 +145,10 @@ h1 {
 .humidity__block {
   text-align: left;
   border-left: 1px solid var(--color-white);
+}
+
+.cloud__img {
+  margin-top: 1rem;
+  margin-bottom: 0;
+  height: fit-content;
 }
