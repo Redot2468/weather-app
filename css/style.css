@@ -111,14 +111,14 @@ h1 {
 /* container */
 .container {
   text-align: center;
-  padding: 2rem;
+  padding: 3rem;
   max-width: 800px;
   margin: auto;
   border-radius: 15px;
   background: linear-gradient(
     90deg,
-    rgba(123, 184, 232, 1) 35%,
-    rgba(99, 188, 227, 0.7595413165266106) 100%
+    rgb(105, 177, 231) 35%,
+    rgba(8, 154, 216, 0.76) 100%
   );
 
   box-shadow: 0 0 20px rgb(119, 209, 245);
@@ -128,8 +128,21 @@ h1 {
   margin-top: 3rem;
 }
 
-/* background: linear-gradient(
-    90deg,
-    rgba(154, 222, 238, 1) 35%,
-    rgba(99, 224, 227, 0.7595413165266106) 100%
-  ); */
+.wind__humidity {
+  display: flex;
+  justify-content: center;
+}
+
+.wind__humidity > section {
+  padding: 0 1rem;
+}
+
+.wind__block {
+  text-align: right;
+  border-right: 1px solid var(--color-white);
+}
+
+.humidity__block {
+  text-align: left;
+  border-left: 1px solid var(--color-white);
+}
